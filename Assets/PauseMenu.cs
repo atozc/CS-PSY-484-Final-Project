@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     public void Instructions()
     {
         HowToPlayUI.SetActive(true);
+        pauseMenuUI.SetActive(false);
     }
 
     public void RestartGame()
@@ -43,6 +44,7 @@ public class PauseMenu : MonoBehaviour
     public void Back()
     {
         pauseMenuUI.SetActive(true);
+        HowToPlayUI.SetActive(false);
     }
 
     public void ExitGame()
